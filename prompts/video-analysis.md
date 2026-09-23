@@ -4,15 +4,13 @@
 
 Analyse a complete video as a content, communication, production, and publishing asset.
 
-This prompt replaces the previous `visual-analysis.md` prompt. It should be used whenever a video needs to be understood before creating platform-specific publishing content.
+This prompt replaces the previous `visual-analysis.md` prompt. Use it whenever a video needs to be understood before creating platform-specific publishing content.
 
-The analysis must distinguish between what is directly observable/heard in the video and what is an interpretation or recommendation. Do not invent missing information.
-
----
+The analysis must distinguish between what is directly observable/heard in the video and what is interpretation or recommendation. Do not invent missing information.
 
 ## Input
 
-Analyse the supplied video. Use all available evidence:
+Analyse the supplied video using all available evidence:
 
 - Video frames and sequence
 - Audio and spoken dialogue
@@ -24,8 +22,6 @@ Analyse the supplied video. Use all available evidence:
 - Existing branding or graphics
 
 If a transcription is supplied separately, cross-check it against the video where possible and flag discrepancies rather than silently correcting them.
-
----
 
 ## 1. Video Identification
 
@@ -39,13 +35,9 @@ Return:
 - Intended audience, only when reasonably inferable
 - Likely purpose of the video
 
----
-
 ## 2. Timestamped Video Breakdown
 
-Analyse the video chronologically.
-
-For each meaningful section, identify:
+Analyse the video chronologically. For each meaningful section, identify:
 
 - Approximate timestamp/range
 - What is visually happening
@@ -55,8 +47,6 @@ For each meaningful section, identify:
 - Why the section matters to the overall message
 
 Do not create false timestamps when exact timing is unavailable. Use sequence-based descriptions instead.
-
----
 
 ## 3. Hook Analysis
 
@@ -68,9 +58,7 @@ Evaluate the opening:
 - Is there a question, problem, statement, demonstration, emotional moment, or curiosity gap?
 - What could make a viewer continue watching?
 
-Do not score or rank the hook. Describe its observable characteristics and possible viewer implications.
-
----
+Describe observable characteristics and possible viewer implications; do not score the hook.
 
 ## 4. Speech & Content Analysis
 
@@ -87,9 +75,7 @@ Analyse the spoken content:
 
 Separate factual statements from opinions, experiences, interpretations, and recommendations.
 
-Do not add facts that are not present in the source unless explicitly requested as a separate research task.
-
----
+Do not add facts that are not present unless explicitly requested as a separate research task.
 
 ## 5. Delivery & Communication Analysis
 
@@ -99,21 +85,17 @@ Analyse:
 - Pace
 - Tone
 - Energy
-- Confidence/presence as observable from delivery
+- Observable confidence/presence
 - Pauses
 - Emphasis
 - Facial expressions
 - Body language
 - Interaction between speakers
-- Whether the delivery supports the intended message
+- Whether delivery supports the intended message
 
-Describe observable behaviour rather than making assumptions about a person's internal state.
-
----
+Describe observable behaviour rather than assuming internal states.
 
 ## 6. Visual & Production Analysis
-
-Analyse:
 
 ### Composition
 - Framing
@@ -151,8 +133,6 @@ Analyse:
 
 Identify anything that may distract from the message or reduce readability.
 
----
-
 ## 7. Educational / Informational Value
 
 Determine what the viewer can learn from the video.
@@ -169,8 +149,6 @@ Identify:
 
 For child-development, education, therapy, medical, or other professional content, preserve the distinction between professional information and general advice.
 
----
-
 ## 8. Trust, Accuracy & Safety Check
 
 Flag:
@@ -185,9 +163,7 @@ Flag:
 - Sensitive situations
 - Copyright or third-party material that is visibly present
 
-Do not declare a claim false unless sufficient evidence is available. Mark it as `Needs verification` when appropriate.
-
----
+Do not declare a claim false unless sufficient evidence is available. Mark it `Needs verification` when appropriate.
 
 ## 9. Content Opportunities
 
@@ -202,30 +178,22 @@ Identify possible content uses without rewriting the content yet:
 - LinkedIn post
 - Google Business Profile post, where appropriate
 
-For each applicable format, explain the specific content angle that the existing video supports.
-
-Do not force every platform.
-
----
+For each applicable format, explain the specific content angle supported by the existing video. Do not force every platform.
 
 ## 10. Best Extractable Moments
 
-Identify the most useful moments for repurposing.
-
-For each moment provide:
+Identify useful moments for repurposing. For each provide:
 
 - Timestamp/sequence
 - What happens
 - Why it is useful
 - Possible use: hook / main body / proof / emotional moment / CTA / B-roll / story
 
-Do not rank moments with arbitrary scores. Explain their distinct use cases instead.
-
----
+Do not rank moments with arbitrary scores. Explain their distinct use cases.
 
 ## 11. Reel / Short Structure Recommendation
 
-If the video is suitable for short-form content, propose a structure based only on material actually present:
+If suitable for short-form content, propose a structure based only on material actually present:
 
 1. Hook
 2. Context/problem
@@ -233,11 +201,7 @@ If the video is suitable for short-form content, propose a structure based only 
 4. Key takeaway
 5. CTA or closing
 
-Identify what can be retained, trimmed, reordered, or supported with B-roll/subtitles.
-
-Do not fabricate dialogue.
-
----
+Identify what can be retained, trimmed, reordered, or supported with B-roll/subtitles. Do not fabricate dialogue.
 
 ## 12. Thumbnail / Cover Opportunities
 
@@ -250,8 +214,6 @@ Identify:
 - Whether the frame works better for Instagram Reel cover, YouTube thumbnail, or Story
 
 Cover text should be developed later by the relevant platform/content prompt unless specifically requested here.
-
----
 
 ## 13. CTA Opportunities
 
@@ -266,8 +228,6 @@ Identify whether the existing video naturally supports:
 
 Recommend only CTAs that logically follow from the content. Do not invent offers, services, links, or claims.
 
----
-
 ## 14. Publishing Considerations
 
 Identify:
@@ -280,8 +240,6 @@ Identify:
 - Whether the ending needs a clearer close
 - Whether the original audio should be retained
 - Any platform-specific adaptation required
-
----
 
 ## 15. Final Analysis Summary
 
@@ -301,8 +259,6 @@ Concrete production/content improvements.
 
 ### Recommended Next Step
 Identify which existing TPS platform prompt should be used next and what information from this analysis should be passed into it.
-
----
 
 ## Output Rules
 
