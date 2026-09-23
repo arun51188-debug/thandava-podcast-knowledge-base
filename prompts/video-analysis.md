@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Analyse a complete video as a content, communication, production, and publishing asset.
+Analyse a complete video as a content, communication, production, audience, trend, research, and publishing asset.
 
 This prompt replaces the previous `visual-analysis.md` prompt. Use it whenever a video needs to be understood before creating platform-specific publishing content.
 
-The analysis must distinguish between what is directly observable/heard in the video and what is interpretation or recommendation. Do not invent missing information.
+The analysis must distinguish between what is directly observable/heard in the video, what current external research shows, and what is interpretation or recommendation. Do not invent missing information.
 
 ## Input
 
@@ -20,6 +20,8 @@ Analyse the supplied video using all available evidence:
 - Speaker/interactions
 - Pacing and delivery
 - Existing branding or graphics
+- Requested target platform(s), if specified
+- Brand/client context, if supplied
 
 If a transcription is supplied separately, cross-check it against the video where possible and flag discrepancies rather than silently correcting them.
 
@@ -165,7 +167,63 @@ Flag:
 
 Do not declare a claim false unless sufficient evidence is available. Mark it `Needs verification` when appropriate.
 
-## 9. Content Opportunities
+## 9. Current Trend, Audience Demand & Social Research
+
+When the analysis is being prepared for Instagram or any other social platform, **perform current web research before making trend or audience-demand recommendations**.
+
+Research should be current to the date of analysis and should cover, where relevant:
+
+- Current platform trends related to the topic and content format
+- Emerging content formats, hooks, storytelling patterns, or audience behaviours
+- Current search/discovery language and commonly used terminology
+- Topics/questions people are actively discussing or searching for
+- Recent conversations, creator patterns, community discussions, or recurring audience questions
+- Relevant seasonal, cultural, industry, or awareness-calendar context
+- Platform-specific content/discovery considerations
+- Current competitor/peer content patterns when useful
+- Recent credible research or authoritative sources relevant to the subject matter
+
+### Research Rules
+
+1. Do not claim something is `trending` without current evidence.
+2. Prefer primary/official platform sources, reputable research, authoritative organisations, and credible industry sources.
+3. Community discussions can reveal audience questions and language, but should not automatically be treated as factual evidence.
+4. Separate current trend evidence from evergreen content principles.
+5. Do not chase a trend merely because it is popular; determine whether it genuinely fits the video's subject, audience, brand, and objective.
+6. Never force unrelated trending audio, memes, hashtags, or formats into professional, educational, medical, child-related, or trust-sensitive content.
+7. For factual or professional claims discovered during research, verify them independently and identify the source.
+8. State the research date and distinguish recent findings from older evidence.
+9. If reliable current evidence cannot be found, say so rather than guessing.
+10. Do not treat search volume, engagement, or social discussion as proof that a claim is true.
+
+### Audience Need Analysis
+
+Based on the video plus current research, identify:
+
+- What people may currently be looking for around this topic
+- Questions they may want answered
+- Misconceptions or recurring concerns visible in current discussions
+- Language/phrasing the audience is using
+- What information is missing from the current video but may be useful in the final post
+- What part of the existing video most directly answers an identifiable audience need
+- Potential content gaps that could become future posts
+
+Do not infer private or sensitive characteristics about the audience.
+
+### Trend Fit
+
+For each relevant current trend or audience pattern, provide:
+
+- Trend/research finding
+- Evidence/source
+- Date or recency
+- Why it is relevant to this video
+- How it could influence the content approach
+- Whether it should be used, adapted, or ignored — with factual reasoning rather than a score
+
+The purpose is **informed adaptation, not trend chasing**.
+
+## 10. Content Opportunities
 
 Identify possible content uses without rewriting the content yet:
 
@@ -178,9 +236,9 @@ Identify possible content uses without rewriting the content yet:
 - LinkedIn post
 - Google Business Profile post, where appropriate
 
-For each applicable format, explain the specific content angle supported by the existing video. Do not force every platform.
+For each applicable format, explain the specific content angle supported by the existing video and current audience/platform research. Do not force every platform.
 
-## 10. Best Extractable Moments
+## 11. Best Extractable Moments
 
 Identify useful moments for repurposing. For each provide:
 
@@ -191,7 +249,7 @@ Identify useful moments for repurposing. For each provide:
 
 Do not rank moments with arbitrary scores. Explain their distinct use cases.
 
-## 11. Reel / Short Structure Recommendation
+## 12. Reel / Short Structure Recommendation
 
 If suitable for short-form content, propose a structure based only on material actually present:
 
@@ -201,9 +259,9 @@ If suitable for short-form content, propose a structure based only on material a
 4. Key takeaway
 5. CTA or closing
 
-Identify what can be retained, trimmed, reordered, or supported with B-roll/subtitles. Do not fabricate dialogue.
+Use current audience research to explain why the proposed structure fits the platform and audience. Do not fabricate dialogue.
 
-## 12. Thumbnail / Cover Opportunities
+## 13. Thumbnail / Cover Opportunities
 
 Identify:
 
@@ -215,7 +273,7 @@ Identify:
 
 Cover text should be developed later by the relevant platform/content prompt unless specifically requested here.
 
-## 13. CTA Opportunities
+## 14. CTA Opportunities
 
 Identify whether the existing video naturally supports:
 
@@ -226,9 +284,9 @@ Identify whether the existing video naturally supports:
 - Contact/enquiry CTA
 - Learn-more CTA
 
-Recommend only CTAs that logically follow from the content. Do not invent offers, services, links, or claims.
+Use current audience needs where relevant, but recommend only CTAs that logically follow from the content. Do not invent offers, services, links, or claims.
 
-## 14. Publishing Considerations
+## 15. Publishing Considerations
 
 Identify:
 
@@ -240,8 +298,9 @@ Identify:
 - Whether the ending needs a clearer close
 - Whether the original audio should be retained
 - Any platform-specific adaptation required
+- Whether current trends/research suggest an adaptation
 
-## 15. Final Analysis Summary
+## 16. Final Analysis Summary
 
 Return a concise summary containing:
 
@@ -251,11 +310,20 @@ What the video is fundamentally about.
 ### Core Message
 What the audience should understand after watching.
 
+### Current Audience Need
+What people appear to be looking for around this topic based on current research.
+
+### Relevant Current Trends / Research
+Only include trends or findings supported by current sources, with source and date.
+
 ### Strongest Content Elements
 The specific elements that carry the message.
 
 ### Main Improvement Opportunities
 Concrete production/content improvements.
+
+### Recommended Platform & Content Direction
+Identify the most relevant platform/format(s) based on the video's characteristics and current research. Do not use arbitrary scores or rankings.
 
 ### Recommended Next Step
 Identify which existing TPS platform prompt should be used next and what information from this analysis should be passed into it.
@@ -264,11 +332,14 @@ Identify which existing TPS platform prompt should be used next and what informa
 
 1. Analyse before creating.
 2. Use evidence from the actual video wherever available.
-3. Do not invent dialogue, timestamps, facts, people, or context.
-4. Clearly separate observation, transcription, interpretation, and recommendation.
-5. Preserve the speaker's intended meaning when summarising.
-6. Do not automatically generate captions, hashtags, ALT text, titles, or descriptions unless explicitly requested.
-7. Do not score, rank, or assign arbitrary quality ratings.
-8. Flag uncertainty instead of guessing.
-9. For professional, medical, educational, or child-related content, prioritise accuracy, privacy, and trust.
-10. This analysis is an upstream content-analysis layer; platform-specific prompts should handle final publishing copy.
+3. When social-media analysis is requested, use current web research rather than relying only on model knowledge.
+4. Clearly cite and date current external research used for trend/audience claims.
+5. Do not invent dialogue, timestamps, facts, people, trends, audience behaviour, or context.
+6. Clearly separate observation, transcription, external research, interpretation, and recommendation.
+7. Preserve the speaker's intended meaning when summarising.
+8. Do not automatically generate captions, hashtags, ALT text, titles, or descriptions unless explicitly requested.
+9. Do not score, rank, or assign arbitrary quality ratings.
+10. Flag uncertainty instead of guessing.
+11. For professional, medical, educational, or child-related content, prioritise accuracy, privacy, and trust.
+12. Do not let a trend override the video's actual value, brand fit, audience relevance, or factual accuracy.
+13. This analysis is an upstream content-analysis layer; platform-specific prompts should handle final publishing copy.
