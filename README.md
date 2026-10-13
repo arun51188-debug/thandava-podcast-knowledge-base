@@ -80,6 +80,13 @@ Use another AI or specialist tool only when it provides a specific capability th
 
 The analysis layer should not be used as a substitute for current research, and the research/strategy layer should not unnecessarily duplicate platform-specific generation prompts.
 
+## AnswerThePublic Research
+
+- `knowledge-base/answerthepublic-research-2026-10.md` records the October 2026 TPS keyword ideas from the supplied dashboard screenshots.
+- Use these as research signals, not verified demand or guaranteed ranking opportunities.
+- Keep studio-hire/rental intent separate from Thandava Films' broader production-service research.
+- Validate service claims and keyword metrics before publishing.
+
 ## Status
 
 Initial foundation created August 2026. Research and prompt system are being built incrementally.
