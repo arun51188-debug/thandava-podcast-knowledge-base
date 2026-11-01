@@ -2,11 +2,11 @@
 
 ## Purpose
 
-Analyse a complete video as a content, communication, production, audience, trend, research, and publishing asset.
+Analyse the supplied video as a source-evidence, communication and production asset. Current audience research and platform strategy belong in the separate research stage.
 
 This prompt replaces the previous `visual-analysis.md` prompt. Use it whenever a video needs to be understood before creating platform-specific publishing content.
 
-The analysis must distinguish between what is directly observable/heard in the video, what current external research shows, and what is interpretation or recommendation. Do not invent missing information.
+The analysis must distinguish what is directly observable/heard in the video from interpretation or recommendation. Do not claim to have performed external research in this stage. Do not invent missing information.
 
 ## Input
 
@@ -167,61 +167,21 @@ Flag:
 
 Do not declare a claim false unless sufficient evidence is available. Mark it `Needs verification` when appropriate.
 
-## 9. Current Trend, Audience Demand & Social Research
+## 9. Research Handoff (Not Performed in This Stage)
 
-When the analysis is being prepared for Instagram or any other social platform, **perform current web research before making trend or audience-demand recommendations**.
+This prompt is the **source-video analysis stage**. Keep it grounded in the supplied video and any explicitly supplied context. Do not perform broad current trend, audience-demand, competitor or search research here.
 
-Research should be current to the date of analysis and should cover, where relevant:
+Record only research questions that arise from the video and claims that require external verification. Do not label anything as currently trending or claim audience demand without a separately sourced research step.
 
-- Current platform trends related to the topic and content format
-- Emerging content formats, hooks, storytelling patterns, or audience behaviours
-- Current search/discovery language and commonly used terminology
-- Topics/questions people are actively discussing or searching for
-- Recent conversations, creator patterns, community discussions, or recurring audience questions
-- Relevant seasonal, cultural, industry, or awareness-calendar context
-- Platform-specific content/discovery considerations
-- Current competitor/peer content patterns when useful
-- Recent credible research or authoritative sources relevant to the subject matter
+After this analysis, use `prompts/social-content-research.md` when current audience questions, search language, trends, competitor patterns, awareness-calendar relevance or recent research would materially improve the strategy. That prompt owns the current web research and records the research date and sources.
 
-### Research Rules
+The research handoff should list:
+- Claims or terminology requiring authoritative verification
+- Audience questions worth researching
+- Search phrases or content angles to validate
+- Relevant platform or policy questions requiring current official guidance
 
-1. Do not claim something is `trending` without current evidence.
-2. Prefer primary/official platform sources, reputable research, authoritative organisations, and credible industry sources.
-3. Community discussions can reveal audience questions and language, but should not automatically be treated as factual evidence.
-4. Separate current trend evidence from evergreen content principles.
-5. Do not chase a trend merely because it is popular; determine whether it genuinely fits the video's subject, audience, brand, and objective.
-6. Never force unrelated trending audio, memes, hashtags, or formats into professional, educational, medical, child-related, or trust-sensitive content.
-7. For factual or professional claims discovered during research, verify them independently and identify the source.
-8. State the research date and distinguish recent findings from older evidence.
-9. If reliable current evidence cannot be found, say so rather than guessing.
-10. Do not treat search volume, engagement, or social discussion as proof that a claim is true.
-
-### Audience Need Analysis
-
-Based on the video plus current research, identify:
-
-- What people may currently be looking for around this topic
-- Questions they may want answered
-- Misconceptions or recurring concerns visible in current discussions
-- Language/phrasing the audience is using
-- What information is missing from the current video but may be useful in the final post
-- What part of the existing video most directly answers an identifiable audience need
-- Potential content gaps that could become future posts
-
-Do not infer private or sensitive characteristics about the audience.
-
-### Trend Fit
-
-For each relevant current trend or audience pattern, provide:
-
-- Trend/research finding
-- Evidence/source
-- Date or recency
-- Why it is relevant to this video
-- How it could influence the content approach
-- Whether it should be used, adapted, or ignored — with factual reasoning rather than a score
-
-The purpose is **informed adaptation, not trend chasing**.
+If no research is needed, say: **No additional research required for this task.**
 
 ## 10. Content Opportunities
 
