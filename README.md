@@ -90,3 +90,10 @@ The analysis layer should not be used as a substitute for current research, and 
 ## Status
 
 Initial foundation created August 2026. Research and prompt system are being built incrementally.
+
+
+## Shared operations navigation
+
+Shared prompt standards, reusable workflows and cross-client routing are maintained in the [Posting Strategy Ops System](https://github.com/arun51188-debug/posting-strategy-ops-system). Start with its [Client Repository Registry](https://github.com/arun51188-debug/posting-strategy-ops-system/blob/main/registry/CLIENT_REPOSITORY_REGISTRY.md), [Shared Prompt Index](https://github.com/arun51188-debug/posting-strategy-ops-system/blob/main/PROMPT_INDEX.md) and [Cross-Repository Lookup Protocol](https://github.com/arun51188-debug/posting-strategy-ops-system/blob/main/workflows/CROSS_REPOSITORY_LOOKUP_PROTOCOL.md).
+
+Client-specific facts, approvals, research and governance in this repository remain authoritative for this client. Do not replace them with generic Ops instructions.

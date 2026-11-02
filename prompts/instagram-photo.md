@@ -35,7 +35,7 @@ Select the most relevant segment from the asset:
    - human connection
    - visual hooks
    - relevant search language
-5. Recommend 5–7 relevant hashtags. Prefer specific niche and local terms over generic trending tags.
+5. Recommend exactly 5 relevant hashtags. Prefer specific niche and local terms over generic trending tags.
 6. Recommend the most appropriate audience segment.
 7. Recommend the strongest content angle:
    - conversation / guest story
@@ -73,7 +73,7 @@ Consider:
 - Avoid generic influencer language.
 - Avoid hard selling unless the user explicitly requests promotional copy.
 - Use Bangalore/Bengaluru naturally when relevant.
-- Keep hashtags to 5 unless another number is explicitly requested.
+- Use exactly 5 hashtags unless the user explicitly requests another number.
 - Prefer human captions that sound like they were written by the studio team.
 
 ## Deliver In This Order
